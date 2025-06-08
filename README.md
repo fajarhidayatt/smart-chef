@@ -1,16 +1,46 @@
-# smart_chef
+# Smart Chef App
 
-A new Flutter project.
+## Description
 
-## Getting Started
+Smart Chef is a simple app that provides information about food recipes and how to make them. In this application users can search for food recipes by name or food category. Each food detail displays the recipe, method of preparation, number of servings and cooking duration. This application is already responsive both on mobile and website.
 
-This project is a starting point for a Flutter application.
+## Data
 
-A few resources to get you started if this is your first Flutter project:
+This application still uses dummy data stored in the `lib/models` folder.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Dependencies
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This app is built with some additional packages:
+
+- [flutter_svg 2.0.7](https://pub.dev/packages/flutter_svg)
+- [google_fonts 6.0.0](https://pub.dev/packages/google_fonts)
+
+## Environment
+
+This app is built on the environment:
+
+- Flutter 3.32.2
+- Dart 3.8.1
+
+## Development
+
+If you want to try to do the development process, make sure your device has installed [flutter](https://flutter.dev/).
+
+You can download this repository by clicking `<> Code` at the top, then selecting `Download ZIP` or if you want to clone this repository you can do this by
+
+```bash
+git clone https://github.com/fajarhidayatt/smart-chef.git
+```
+
+After that, install all the packages / dependencies contained in this project
+
+```bash
+flutter pub get
+```
+
+Then run the application
+
+```bash
+flutter run
+# or press f5 if you're using VS Code
+```
