@@ -27,12 +27,15 @@ class _ButtonCategoryState extends State<ButtonCategory> {
         style: ElevatedButton.styleFrom(
           elevation: 0,
           padding: const EdgeInsets.symmetric(vertical: 7.0, horizontal: 20.0),
-          backgroundColor: widget.active ? const Color(0xFF129575) : Colors.transparent,
+          backgroundColor: widget.active
+              ? const Color(0xFF129575)
+              : Colors.transparent,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10.0)
-          )
+            borderRadius: BorderRadius.circular(10.0),
+          ),
         ),
-        child: Text(widget.title,
+        child: Text(
+          widget.title,
           style: GoogleFonts.poppins(
             fontSize: 12.0,
             fontWeight: FontWeight.w600,

@@ -4,7 +4,7 @@ import 'package:smart_chef/models/food.dart';
 import 'package:smart_chef/widgets/button_category.dart';
 import 'package:smart_chef/widgets/food_item.dart';
 import 'package:smart_chef/widgets/text_input.dart';
-import 'package:smart_chef/screens/search.dart';
+import 'package:smart_chef/pages/search.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -19,26 +19,33 @@ class _HomeState extends State<Home> {
 
   List<Food> foodsByCategory = listFood;
   List<Food> newFoodList = listFood.where((food) => food.isNew).toList();
-  List<String> listCategory = ['Semua', 'Daging', 'Ayam', 'Sayuran', 'Seafood', 'Dessert'];
+  List<String> listCategory = [
+    'Semua',
+    'Daging',
+    'Ayam',
+    'Sayuran',
+    'Seafood',
+    'Dessert',
+  ];
 
-  void handleSubmitted(String value){
-    if(value.isNotEmpty){
+  void handleSubmitted(String value) {
+    if (value.isNotEmpty) {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => Search(search: value))
+        MaterialPageRoute(builder: (context) => Search(search: value)),
       );
     }
   }
 
-  void handleCategory(String category){
+  void handleCategory(String category) {
     setState(() {
       currenctCategory = category;
-      if(category == 'Semua') {
+      if (category == 'Semua') {
         foodsByCategory = listFood;
       } else {
         foodsByCategory = listFood
-          .where((food) => food.category == currenctCategory)
-          .toList();
+            .where((food) => food.category == currenctCategory)
+            .toList();
       }
     });
   }
@@ -54,7 +61,6 @@ class _HomeState extends State<Home> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  
                   /// HEADER
                   Padding(
                     padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 30.0),
@@ -64,15 +70,17 @@ class _HomeState extends State<Home> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
-                            Text('Halo Fajar',
+                            Text(
+                              'Halo Fajar',
                               style: GoogleFonts.poppins(
                                 fontSize: 18.0,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
-                            Text('Masak apa hari ini?', 
+                            Text(
+                              'Masak apa hari ini?',
                               style: GoogleFonts.poppins(
-                                fontSize: 12, 
+                                fontSize: 12,
                                 color: Colors.grey,
                               ),
                             ),
@@ -80,7 +88,8 @@ class _HomeState extends State<Home> {
                         ),
                         ClipRRect(
                           borderRadius: BorderRadius.circular(10.0),
-                          child: Image.asset('assets/images/profil_pic.jpg',
+                          child: Image.asset(
+                            'assets/images/profil_pic.jpg',
                             width: 50.0,
                             height: 50.0,
                             fit: BoxFit.cover,
@@ -89,14 +98,14 @@ class _HomeState extends State<Home> {
                       ],
                     ),
                   ),
-            
+
                   /// SEARCH BAR
                   TextInput(
                     value: '',
-                    onSubmitted: handleSubmitted, 
+                    onSubmitted: handleSubmitted,
                     clearWhenSubmitted: true,
                   ),
-            
+
                   /// CATEGORY
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 25.0),
@@ -105,7 +114,7 @@ class _HomeState extends State<Home> {
                       padding: const EdgeInsets.only(left: 20.0, right: 10.0),
                       child: Row(
                         children: <Widget>[
-                          for(String category in listCategory)
+                          for (String category in listCategory)
                             ButtonCategory(
                               title: category,
                               active: category == currenctCategory,
@@ -115,7 +124,7 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                   ),
-            
+
                   /// FEATURED
                   Scrollbar(
                     controller: _scrollController,
@@ -127,16 +136,20 @@ class _HomeState extends State<Home> {
                         padding: const EdgeInsets.only(left: 20.0, right: 5.0),
                         itemCount: foodsByCategory.length,
                         itemBuilder: (context, index) {
-                          return FoodItem(food: foodsByCategory[index], type: 'primary');
+                          return FoodItem(
+                            food: foodsByCategory[index],
+                            type: 'primary',
+                          );
                         },
                       ),
                     ),
                   ),
-            
+
                   /// NEW RECIPES
                   Padding(
                     padding: const EdgeInsets.fromLTRB(20.0, 25.0, 0, 10.0),
-                    child: Text('Resep Baru',
+                    child: Text(
+                      'Resep Baru',
                       style: GoogleFonts.poppins(
                         fontSize: 16.0,
                         fontWeight: FontWeight.w600,
@@ -153,7 +166,10 @@ class _HomeState extends State<Home> {
                         padding: const EdgeInsets.fromLTRB(20.0, 0, 5.0, 20.0),
                         itemCount: newFoodList.length,
                         itemBuilder: (context, index) {
-                          return FoodItem(food: newFoodList[index], type: 'secondary');
+                          return FoodItem(
+                            food: newFoodList[index],
+                            type: 'secondary',
+                          );
                         },
                       ),
                     ),
@@ -173,6 +189,3 @@ class _HomeState extends State<Home> {
     super.dispose();
   }
 }
-
-
-

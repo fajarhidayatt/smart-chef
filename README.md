@@ -15,6 +15,13 @@ This app is built with some additional packages:
 - [flutter_svg 2.0.7](https://pub.dev/packages/flutter_svg)
 - [google_fonts 6.0.0](https://pub.dev/packages/google_fonts)
 
+## Environment
+
+This app is built on the environment:
+
+- Flutter 3.32.2
+- Dart 3.8.1
+
 ## Development
 
 If you want to try to do the development process, make sure your device has installed [flutter](https://flutter.dev/).

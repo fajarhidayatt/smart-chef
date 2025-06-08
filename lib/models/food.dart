@@ -1,4 +1,4 @@
-class Food{
+class Food {
   String name;
   String image;
   String desc;
@@ -35,8 +35,10 @@ class Food{
 List<Food> listFood = [
   Food(
     name: 'Es Cincau Gula Aren',
-    image: 'https://res.cloudinary.com/fajardev/image/upload/v1695126894/assets-smartchef/food/2215740095_azztbq.jpg',
-    desc: 'Resep es cincau menduduki peringkat teratas dalam menu takjil jenis es yang kerap dicari di bulan Ramadan, bersaing ketat dengan es buah dan es kolak. Cara membuatnya sangat mudah dan praktis, sehingga bisa kamu siapkan di beberapa menit menjelang azan magrib.\n\nAda dua jenis cincau yang bisa kamu pilih untuk membuat minuman segar ini, yaitu cincau hitam dan cincau hijau. Keduanya sama-sama enak dan menyegarkan, tapi kali ini, Masak Apa Hari Ini memilih menggunakan cincau hitam. Tentu bukan tanpa alasan kami memilih jenis cincau ini. Diketahui, cincau hitam mengandung serat larut yang tinggi, sehingga dapat membantu memperlancar pencernaan. Pas banget buat kamu yang kurang asupan sayur dan buah selama bulan puasa.\n\nYuk, segera siapkan bahan-bahan untuk membuat resep es cincau gula aren ini, supaya kamu bisa sat set ketika membuatnya.',
+    image:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695126894/assets-smartchef/food/2215740095_azztbq.jpg',
+    desc:
+        'Resep es cincau menduduki peringkat teratas dalam menu takjil jenis es yang kerap dicari di bulan Ramadan, bersaing ketat dengan es buah dan es kolak. Cara membuatnya sangat mudah dan praktis, sehingga bisa kamu siapkan di beberapa menit menjelang azan magrib.\n\nAda dua jenis cincau yang bisa kamu pilih untuk membuat minuman segar ini, yaitu cincau hitam dan cincau hijau. Keduanya sama-sama enak dan menyegarkan, tapi kali ini, Masak Apa Hari Ini memilih menggunakan cincau hitam. Tentu bukan tanpa alasan kami memilih jenis cincau ini. Diketahui, cincau hitam mengandung serat larut yang tinggi, sehingga dapat membantu memperlancar pencernaan. Pas banget buat kamu yang kurang asupan sayur dan buah selama bulan puasa.\n\nYuk, segera siapkan bahan-bahan untuk membuat resep es cincau gula aren ini, supaya kamu bisa sat set ketika membuatnya.',
     category: 'Dessert',
     isNew: false,
     rate: 4.9,
@@ -44,7 +46,8 @@ List<Food> listFood = [
     time: 30,
     portion: 4,
     chefName: 'Chef Arnold',
-    chefPhoto: 'https://res.cloudinary.com/fajardev/image/upload/v1695179133/assets-smartchef/chef/dQ6BDGovwq_zwpby6.jpg',
+    chefPhoto:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695179133/assets-smartchef/chef/dQ6BDGovwq_zwpby6.jpg',
     chefAddress: 'Surabaya, Indonesia',
     ingredients: [
       '600_ml susu cair',
@@ -62,8 +65,10 @@ List<Food> listFood = [
   ),
   Food(
     name: 'Iga Bakar',
-    image: 'https://res.cloudinary.com/fajardev/image/upload/v1695126677/assets-smartchef/food/6835291847_tryuoq.jpg',
-    desc: 'Penyuka masakan serba iga wajib banget cobain resep iga bakar empuk ini! Rasanya mirip seperti iga bakar yang disajikan di restoran. Supaya daging iga empuk, kamu bisa memasak daging iga dalam panci presto ataupun slow cooker.\n\nUntuk pilihan daging iga, kamu bisa menggunakan daging iga short ribs atau juga bagian back ribs yang bikin sensasi makan iga lebih puas. Bagian back ribs merupakan bagian iga yang biasa digunakan untuk konro, yaitu bertulang panjang dengan lapisan daging yang tebal.\n\nUntuk melengkapi resep iga bakar ini, sajikan bersama sambal kesukaan kamu, misalnya sambal goang, sambal tomat, atau sambal terasi pedas yang biasa dijajakan pedagang pecel lele.\n\nSelain resep iga bakar empuk ini, coba juga ide masakan daging iga lainnya seperti sop iga, gulai iga sapi, rawon iga, hingga mie kuah iga. Ikuti juga akun instagram Masak Apa Hari Ini buat kamu yang nggak mau ketinggalan resep-resep menarik lainnya.',
+    image:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695126677/assets-smartchef/food/6835291847_tryuoq.jpg',
+    desc:
+        'Penyuka masakan serba iga wajib banget cobain resep iga bakar empuk ini! Rasanya mirip seperti iga bakar yang disajikan di restoran. Supaya daging iga empuk, kamu bisa memasak daging iga dalam panci presto ataupun slow cooker.\n\nUntuk pilihan daging iga, kamu bisa menggunakan daging iga short ribs atau juga bagian back ribs yang bikin sensasi makan iga lebih puas. Bagian back ribs merupakan bagian iga yang biasa digunakan untuk konro, yaitu bertulang panjang dengan lapisan daging yang tebal.\n\nUntuk melengkapi resep iga bakar ini, sajikan bersama sambal kesukaan kamu, misalnya sambal goang, sambal tomat, atau sambal terasi pedas yang biasa dijajakan pedagang pecel lele.\n\nSelain resep iga bakar empuk ini, coba juga ide masakan daging iga lainnya seperti sop iga, gulai iga sapi, rawon iga, hingga mie kuah iga. Ikuti juga akun instagram Masak Apa Hari Ini buat kamu yang nggak mau ketinggalan resep-resep menarik lainnya.',
     category: 'Daging',
     isNew: false,
     rate: 4.8,
@@ -71,7 +76,8 @@ List<Food> listFood = [
     time: 120,
     portion: 4,
     chefName: 'Chef Renatta',
-    chefPhoto: 'https://res.cloudinary.com/fajardev/image/upload/v1695179132/assets-smartchef/chef/5e16811892fc7_o2pbt5.jpg',
+    chefPhoto:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695179132/assets-smartchef/chef/5e16811892fc7_o2pbt5.jpg',
     chefAddress: 'Jakarta, Indonesia',
     ingredients: [
       '1500_g iga sapi',
@@ -103,8 +109,10 @@ List<Food> listFood = [
   ),
   Food(
     name: 'Seblak Kuah Pedas',
-    image: 'https://res.cloudinary.com/fajardev/image/upload/v1695126816/assets-smartchef/food/9203648392_e7c5ka.jpg',
-    desc: 'Indonesia yang kaya rempah terkenal akan masakannya yang pedas-pedas. Jika membandingkan dengan negara sekitar, masakan khas Indonesia punya rasa pedas yang lebih berempah dan tak kalah nendang. Mungkin salah satu saingannya dalam hal makanan pedas adalah Thailand, yang terkenal dengan cita rasa asam pedasnya. Nah, resep seblak kuah pedas ini bolehlah jadi tandingannya.\n\nGenerasi millennial memang serba kreatif dalam menciptakan makanan baru, meskipun entah sampai kapan sebetulnya akan bertahan. Mungkin generasi berikutnya yang akan jadi saksi kalau apa yang diciptakan generasi sekarang ini akan bertahan di kancah perkulineran Indonesia sampai puluhan tahun ke depan.',
+    image:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695126816/assets-smartchef/food/9203648392_e7c5ka.jpg',
+    desc:
+        'Indonesia yang kaya rempah terkenal akan masakannya yang pedas-pedas. Jika membandingkan dengan negara sekitar, masakan khas Indonesia punya rasa pedas yang lebih berempah dan tak kalah nendang. Mungkin salah satu saingannya dalam hal makanan pedas adalah Thailand, yang terkenal dengan cita rasa asam pedasnya. Nah, resep seblak kuah pedas ini bolehlah jadi tandingannya.\n\nGenerasi millennial memang serba kreatif dalam menciptakan makanan baru, meskipun entah sampai kapan sebetulnya akan bertahan. Mungkin generasi berikutnya yang akan jadi saksi kalau apa yang diciptakan generasi sekarang ini akan bertahan di kancah perkulineran Indonesia sampai puluhan tahun ke depan.',
     category: 'Sayuran',
     isNew: false,
     rate: 4.8,
@@ -112,7 +120,8 @@ List<Food> listFood = [
     time: 40,
     portion: 1,
     chefName: 'Chef Arnold',
-    chefPhoto: 'https://res.cloudinary.com/fajardev/image/upload/v1695179133/assets-smartchef/chef/dQ6BDGovwq_zwpby6.jpg',
+    chefPhoto:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695179133/assets-smartchef/chef/dQ6BDGovwq_zwpby6.jpg',
     chefAddress: 'Surabaya, Indonesia',
     ingredients: [
       '100_g kerupuk merah mentah',
@@ -141,8 +150,10 @@ List<Food> listFood = [
   ),
   Food(
     name: 'Dimsum Ayam Udang',
-    image: 'https://res.cloudinary.com/fajardev/image/upload/v1695126721/assets-smartchef/food/1938503506_qyd9ez.jpg',
-    desc: 'Lagi cari ide frozen food untuk stok camilan? Daripada beli, mending coba resep dimsum ayam udang ini, yuk! Gunakan potongan daging dari bagian paha ayam sehingga menghasilkan tekstur daging yang kenyal sekaligus lebih gurih. Untuk pilihan sayurnya, selain jamur hioko, kamu bisa menggunakan wortel, zucchini, atau jenis jamur lainnya seperti jamur kancing, jamur kuping, atau jamur tiram.\n\nLabu parut siam ditambahkan supaya adonan dimsum atau siomay ayam lebih kokoh sekaligus menambahkan tekstur kenyal sekaligus empuk. Agar adonan siomay ayam udang ini lebih sedap, tambahkan Royco Saus Tiram dan Royco Kaldu Ayam.\n\nKalau ingin dijadikan stok frozen food, siapkan bahan resep dimsum ayam udang ini sekaligus banyak dan bekukan dalam freezer. Susun dalam wadah tertutup dan bila ingin ditumpuk, lapisi dengan baking paper supaya tidak menempel. Coba juga ide resep frozen food lainnya seperti egg chicken roll, kaki naga, dan lumpia goreng.',
+    image:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695126721/assets-smartchef/food/1938503506_qyd9ez.jpg',
+    desc:
+        'Lagi cari ide frozen food untuk stok camilan? Daripada beli, mending coba resep dimsum ayam udang ini, yuk! Gunakan potongan daging dari bagian paha ayam sehingga menghasilkan tekstur daging yang kenyal sekaligus lebih gurih. Untuk pilihan sayurnya, selain jamur hioko, kamu bisa menggunakan wortel, zucchini, atau jenis jamur lainnya seperti jamur kancing, jamur kuping, atau jamur tiram.\n\nLabu parut siam ditambahkan supaya adonan dimsum atau siomay ayam lebih kokoh sekaligus menambahkan tekstur kenyal sekaligus empuk. Agar adonan siomay ayam udang ini lebih sedap, tambahkan Royco Saus Tiram dan Royco Kaldu Ayam.\n\nKalau ingin dijadikan stok frozen food, siapkan bahan resep dimsum ayam udang ini sekaligus banyak dan bekukan dalam freezer. Susun dalam wadah tertutup dan bila ingin ditumpuk, lapisi dengan baking paper supaya tidak menempel. Coba juga ide resep frozen food lainnya seperti egg chicken roll, kaki naga, dan lumpia goreng.',
     category: 'Ayam',
     isNew: false,
     rate: 4.6,
@@ -150,7 +161,8 @@ List<Food> listFood = [
     time: 120,
     portion: 5,
     chefName: 'Chef Juna',
-    chefPhoto: 'https://res.cloudinary.com/fajardev/image/upload/v1695179133/assets-smartchef/chef/718h2ja82k_qgzrna.jpg',
+    chefPhoto:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695179133/assets-smartchef/chef/718h2ja82k_qgzrna.jpg',
     chefAddress: 'Jakarta, Indonesia',
     ingredients: [
       '400_g filet paha ayam tanpa kulit, potong-potong',
@@ -188,8 +200,10 @@ List<Food> listFood = [
   ),
   Food(
     name: 'Lumpia Vietnam Sayuran',
-    image: 'https://res.cloudinary.com/fajardev/image/upload/v1695132646/assets-smartchef/food/417440626_jj6gnx.jpg',
-    desc: 'Goi cuon lebih familiar dikenal dengan nama summer rolls atau lumpia Vietnam. Tersaji apik dalam balutan kulit transparan yang terbuat dari beras. Isiannya pun bermacam-macam, mulai dari sayuran mentah, bihun tawar, selada, timun, wortel, serta ketumbar. Perpaduan bahannya membuat cemilan yang satu ini terasa aromatik dan menyegarkan mulut.\n\nAgar semakin lezat, sajikan lumpia Vietnam dengan saus yang terbuat dari adonan kecap asin, air jeruk nipis, gula pasir, cabe rawit, dan ketumbar. Tak lupa tambahkan Royco Kaldu Jamur sebagai pelengkap dimensi rasa saus lumpia. Rendah kalori dan aman dimakan kapan saja, tak heran jika lumpia Vietnam menjadi salah satu cemilan yang digadang-gadang oleh penggiat gaya hidup sehat di luar sana.\n\nPenasaran cara membuatnya? Yuk, daripada menunggu lama, langsung saja cek resepnya!',
+    image:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695132646/assets-smartchef/food/417440626_jj6gnx.jpg',
+    desc:
+        'Goi cuon lebih familiar dikenal dengan nama summer rolls atau lumpia Vietnam. Tersaji apik dalam balutan kulit transparan yang terbuat dari beras. Isiannya pun bermacam-macam, mulai dari sayuran mentah, bihun tawar, selada, timun, wortel, serta ketumbar. Perpaduan bahannya membuat cemilan yang satu ini terasa aromatik dan menyegarkan mulut.\n\nAgar semakin lezat, sajikan lumpia Vietnam dengan saus yang terbuat dari adonan kecap asin, air jeruk nipis, gula pasir, cabe rawit, dan ketumbar. Tak lupa tambahkan Royco Kaldu Jamur sebagai pelengkap dimensi rasa saus lumpia. Rendah kalori dan aman dimakan kapan saja, tak heran jika lumpia Vietnam menjadi salah satu cemilan yang digadang-gadang oleh penggiat gaya hidup sehat di luar sana.\n\nPenasaran cara membuatnya? Yuk, daripada menunggu lama, langsung saja cek resepnya!',
     category: 'Sayuran',
     isNew: true,
     rate: 4.8,
@@ -197,7 +211,8 @@ List<Food> listFood = [
     time: 30,
     portion: 4,
     chefName: 'Chef Renatta',
-    chefPhoto: 'https://res.cloudinary.com/fajardev/image/upload/v1695179132/assets-smartchef/chef/5e16811892fc7_o2pbt5.jpg',
+    chefPhoto:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695179132/assets-smartchef/chef/5e16811892fc7_o2pbt5.jpg',
     chefAddress: 'Jakarta, Indonesia',
     ingredients: [
       '16_lembar banh trang atau rice paper Vietnam',
@@ -223,8 +238,10 @@ List<Food> listFood = [
   ),
   Food(
     name: 'Ayam Goreng Korea',
-    image: 'https://res.cloudinary.com/fajardev/image/upload/v1695126763/assets-smartchef/food/1728349273_tlm618.jpg',
-    desc: 'Salah satu makanan yang paling sering disorot di drama Korea Selatan adalah ayam goreng Korea. Setuju, kan? Umumnya hidangan ayam goreng tepung ini terlihat dinikmati sebagai menu praktis di malam hari sambil bersantai. Nah, pas banget buat kamu yang lagi pengen maraton drama Korea Selatan sambil makan, yuk, bikin ayam goreng pedas manis ini!\n\nAda beberapa versi lapisan tepung untuk ayam goreng berlapis saus gochujang ini. Diantaranya adalah dengan tepung kentang-tepung terigu atau tepung maizena.\n\nJadi kamu bisa menggunakan alternatif tepung maizena bila tak punya tepung kentang di rumah. Kalau menggunakan tepung maizena, cukup lumuri sesudah daging ayam dimarinasi. Bedanya kalau menggunakan tepung maizena hasil lapisan tepungnya lebih tipis. Cocok buat kamu yang nggak suka dengan ayam goreng berlapis tepung tebal atau banyak.\n\nSajikan ayam goreng Korea ini bersama jjajangmyeon, kimbab, rabokki, atau pajeon supaya nonton drakor makin seru.',
+    image:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695126763/assets-smartchef/food/1728349273_tlm618.jpg',
+    desc:
+        'Salah satu makanan yang paling sering disorot di drama Korea Selatan adalah ayam goreng Korea. Setuju, kan? Umumnya hidangan ayam goreng tepung ini terlihat dinikmati sebagai menu praktis di malam hari sambil bersantai. Nah, pas banget buat kamu yang lagi pengen maraton drama Korea Selatan sambil makan, yuk, bikin ayam goreng pedas manis ini!\n\nAda beberapa versi lapisan tepung untuk ayam goreng berlapis saus gochujang ini. Diantaranya adalah dengan tepung kentang-tepung terigu atau tepung maizena.\n\nJadi kamu bisa menggunakan alternatif tepung maizena bila tak punya tepung kentang di rumah. Kalau menggunakan tepung maizena, cukup lumuri sesudah daging ayam dimarinasi. Bedanya kalau menggunakan tepung maizena hasil lapisan tepungnya lebih tipis. Cocok buat kamu yang nggak suka dengan ayam goreng berlapis tepung tebal atau banyak.\n\nSajikan ayam goreng Korea ini bersama jjajangmyeon, kimbab, rabokki, atau pajeon supaya nonton drakor makin seru.',
     category: 'Ayam',
     isNew: true,
     rate: 4.9,
@@ -232,7 +249,8 @@ List<Food> listFood = [
     time: 60,
     portion: 4,
     chefName: 'Chef Renatta',
-    chefPhoto: 'https://res.cloudinary.com/fajardev/image/upload/v1695179132/assets-smartchef/chef/5e16811892fc7_o2pbt5.jpg',
+    chefPhoto:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695179132/assets-smartchef/chef/5e16811892fc7_o2pbt5.jpg',
     chefAddress: 'Jakarta, Indonesia',
     ingredients: [
       '1_kg sayap ayam, potong 2 bagian',
@@ -266,8 +284,10 @@ List<Food> listFood = [
   ),
   Food(
     name: 'Ayam Rica-Rica Kemangi',
-    image: 'https://res.cloudinary.com/fajardev/image/upload/v1695132053/assets-smartchef/food/8274635267_rmnzpi.jpg',
-    desc: 'Sebagai bahan dalam resep ayam rica-rica kemangi khas Manado, daun kemangi punya peran utama untuk memperkuat aroma dan menonjolkan keunikan dari hidangan ini. Tapi tak hanya untuk resep ini, lho, karena rupanya kemangi juga kerap dipakai dalam banyak masakan lainnya. Dari lalapan sederhana hingga untuk menginfusi aroma pada bumbu halus atau masakan yang tengah dimasak, ternyata kehadiran kemangi hampir selalu ada!\n\nBicara soal jenisnya, kemangi dikategorikan sebagai herba atau tumbuhan terna yang memiliki tangkai rawan. Termasuk di antaranya adalah ketumbar dan juga peterseli. Kemudian ada juga tumbuhan terna yang memiliki tangkai lebih keras seperti oregano, thyme, ataupun rosemary.',
+    image:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695132053/assets-smartchef/food/8274635267_rmnzpi.jpg',
+    desc:
+        'Sebagai bahan dalam resep ayam rica-rica kemangi khas Manado, daun kemangi punya peran utama untuk memperkuat aroma dan menonjolkan keunikan dari hidangan ini. Tapi tak hanya untuk resep ini, lho, karena rupanya kemangi juga kerap dipakai dalam banyak masakan lainnya. Dari lalapan sederhana hingga untuk menginfusi aroma pada bumbu halus atau masakan yang tengah dimasak, ternyata kehadiran kemangi hampir selalu ada!\n\nBicara soal jenisnya, kemangi dikategorikan sebagai herba atau tumbuhan terna yang memiliki tangkai rawan. Termasuk di antaranya adalah ketumbar dan juga peterseli. Kemudian ada juga tumbuhan terna yang memiliki tangkai lebih keras seperti oregano, thyme, ataupun rosemary.',
     category: 'Ayam',
     isNew: false,
     rate: 4.7,
@@ -275,7 +295,8 @@ List<Food> listFood = [
     time: 60,
     portion: 4,
     chefName: 'Chef Arnold',
-    chefPhoto: 'https://res.cloudinary.com/fajardev/image/upload/v1695179133/assets-smartchef/chef/dQ6BDGovwq_zwpby6.jpg',
+    chefPhoto:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695179133/assets-smartchef/chef/dQ6BDGovwq_zwpby6.jpg',
     chefAddress: 'Surabaya, Indonesia',
     ingredients: [
       '1_ekor ayam kampung, potong 8 bagian, buang kulitnya',
@@ -307,8 +328,10 @@ List<Food> listFood = [
   ),
   Food(
     name: 'Sate Cumi Bakar',
-    image: 'https://res.cloudinary.com/fajardev/image/upload/v1695133316/assets-smartchef/food/8290374839_zonclq.jpg',
-    desc: 'Sedang kehabisan ide memasak cumi? Mungkin kamu bosan dengan olahan cumi yang itu-itu saja seperti cumi saus asam manis, cumi goreng tepung, cumi balado, atau cumi masak saus padang. Kali ini tak ada salahnya menghadirkan sensasi makan di restoran seafood tepi pantai dengan mencoba resep Sate Cumi Bakar Bumbu Pedas.\n\nUnik, resep Sate Cumi Bakar Bumbu Pedas ini dimarinasi dengan pedas gurih Jawara Saus Sambal Extra Hot kemudian disajikan dengan Jawara Cabai Tabur Bawang Goreng. Dengan sensasi bawang goreng di dalam kedua olahan cabai ini, tentu sate cumi jadi lebih unik dan mantap.',
+    image:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695133316/assets-smartchef/food/8290374839_zonclq.jpg',
+    desc:
+        'Sedang kehabisan ide memasak cumi? Mungkin kamu bosan dengan olahan cumi yang itu-itu saja seperti cumi saus asam manis, cumi goreng tepung, cumi balado, atau cumi masak saus padang. Kali ini tak ada salahnya menghadirkan sensasi makan di restoran seafood tepi pantai dengan mencoba resep Sate Cumi Bakar Bumbu Pedas.\n\nUnik, resep Sate Cumi Bakar Bumbu Pedas ini dimarinasi dengan pedas gurih Jawara Saus Sambal Extra Hot kemudian disajikan dengan Jawara Cabai Tabur Bawang Goreng. Dengan sensasi bawang goreng di dalam kedua olahan cabai ini, tentu sate cumi jadi lebih unik dan mantap.',
     category: 'Seafood',
     isNew: false,
     rate: 4.8,
@@ -316,7 +339,8 @@ List<Food> listFood = [
     time: 60,
     portion: 4,
     chefName: 'Chef Juna',
-    chefPhoto: 'https://res.cloudinary.com/fajardev/image/upload/v1695179133/assets-smartchef/chef/718h2ja82k_qgzrna.jpg',
+    chefPhoto:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695179133/assets-smartchef/chef/718h2ja82k_qgzrna.jpg',
     chefAddress: 'Jakarta, Indonesia',
     ingredients: [
       '500_g cumi segar',
@@ -340,8 +364,10 @@ List<Food> listFood = [
   ),
   Food(
     name: 'Gulai Nangka Sederhana',
-    image: 'https://res.cloudinary.com/fajardev/image/upload/v1695132403/assets-smartchef/food/1728362798_fgl2pc.jpg',
-    desc: 'Mungkin banyak dari kalian yang penasaran dengan lezatnya resep gulai nangka muda a la masakan Padang. Tidak heran, karena masakan yang satu ini adalah menu pelengkap paling pas untuk menemani santap rendang ataupun ayam pop di restoran. Cara membuatnya juga cukup sederhana, kok. Pasti kamu bisa membuatnya sendiri di rumah!\n\nBukan hanya enak diolah sebagai sayur untuk pendamping nasi, resep ini juga pas buat kamu yang sedang mencari teman makan ketupat atau lontong. Pilih nangka muda sebagai bahan utama. Alasannya adalah karena nangka muda lebih enak dan lebih empuk. Nangka yang masih muda ditandai dengan bijinya yang tidak keras.',
+    image:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695132403/assets-smartchef/food/1728362798_fgl2pc.jpg',
+    desc:
+        'Mungkin banyak dari kalian yang penasaran dengan lezatnya resep gulai nangka muda a la masakan Padang. Tidak heran, karena masakan yang satu ini adalah menu pelengkap paling pas untuk menemani santap rendang ataupun ayam pop di restoran. Cara membuatnya juga cukup sederhana, kok. Pasti kamu bisa membuatnya sendiri di rumah!\n\nBukan hanya enak diolah sebagai sayur untuk pendamping nasi, resep ini juga pas buat kamu yang sedang mencari teman makan ketupat atau lontong. Pilih nangka muda sebagai bahan utama. Alasannya adalah karena nangka muda lebih enak dan lebih empuk. Nangka yang masih muda ditandai dengan bijinya yang tidak keras.',
     category: 'Sayuran',
     isNew: false,
     rate: 4.6,
@@ -349,7 +375,8 @@ List<Food> listFood = [
     time: 60,
     portion: 4,
     chefName: 'Chef Arnold',
-    chefPhoto: 'https://res.cloudinary.com/fajardev/image/upload/v1695179133/assets-smartchef/chef/dQ6BDGovwq_zwpby6.jpg',
+    chefPhoto:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695179133/assets-smartchef/chef/dQ6BDGovwq_zwpby6.jpg',
     chefAddress: 'Surabaya, Indonesia',
     ingredients: [
       '600_g nangka muda, potong-potong',
@@ -379,8 +406,10 @@ List<Food> listFood = [
   ),
   Food(
     name: 'Beef Katsu',
-    image: 'https://res.cloudinary.com/fajardev/image/upload/v1695126529/assets-smartchef/food/2194034587_ptkynw.jpg',
-    desc: 'Bicara soal hidangan katsu khas Jepang, mana yang jadi kesukaan kamu? Versi daging sapi atau daging ayam? Ada beberapa versi menyajikan daging berbalut tepung roti yang digoreng ini. Disajikan dengan saus katsu dan ada pula yang menyajikannya dengan saus katsu berwarna gelap dan kental.\n\nDiracik dari kecap inggris, Royco Saus Tiram, saus tomat, dan gula pasir, jenis saus ini gampang banget bikinnya. Agar lapisan tepung dan telur lebih menempel pada daging, diamkan daging yang sudah dilapisi tepung dalam kulkas selama 1 jam. Setelah matang, tiriskan daging selama beberapa menit, kemudian potong-potong sebelum disajikan.\n\nFungsinya supaya sari daging atau juice tidak keluar bersamaan ketika dipotong. Sehingga rasa dan tekstur daging jadi lebih sedap dan juicy. Yuk, bikin beef katsu a la restoran Jepang ini di rumah!',
+    image:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695126529/assets-smartchef/food/2194034587_ptkynw.jpg',
+    desc:
+        'Bicara soal hidangan katsu khas Jepang, mana yang jadi kesukaan kamu? Versi daging sapi atau daging ayam? Ada beberapa versi menyajikan daging berbalut tepung roti yang digoreng ini. Disajikan dengan saus katsu dan ada pula yang menyajikannya dengan saus katsu berwarna gelap dan kental.\n\nDiracik dari kecap inggris, Royco Saus Tiram, saus tomat, dan gula pasir, jenis saus ini gampang banget bikinnya. Agar lapisan tepung dan telur lebih menempel pada daging, diamkan daging yang sudah dilapisi tepung dalam kulkas selama 1 jam. Setelah matang, tiriskan daging selama beberapa menit, kemudian potong-potong sebelum disajikan.\n\nFungsinya supaya sari daging atau juice tidak keluar bersamaan ketika dipotong. Sehingga rasa dan tekstur daging jadi lebih sedap dan juicy. Yuk, bikin beef katsu a la restoran Jepang ini di rumah!',
     category: 'Daging',
     isNew: false,
     rate: 4.9,
@@ -388,7 +417,8 @@ List<Food> listFood = [
     time: 60,
     portion: 4,
     chefName: 'Chef Juna',
-    chefPhoto: 'https://res.cloudinary.com/fajardev/image/upload/v1695179133/assets-smartchef/chef/718h2ja82k_qgzrna.jpg',
+    chefPhoto:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695179133/assets-smartchef/chef/718h2ja82k_qgzrna.jpg',
     chefAddress: 'Jakarta, Indonesia',
     ingredients: [
       '½_sdt garam',
@@ -420,8 +450,10 @@ List<Food> listFood = [
   ),
   Food(
     name: 'Udang Asam Manis Pedas',
-    image: 'https://res.cloudinary.com/fajardev/image/upload/v1695126854/assets-smartchef/food/2210987993_sjftiv.jpg',
-    desc: 'Pecinta seafood apalagi udang wajib banget cobain resep udang asam manis pedas ini di rumah. Kombinasi asam, manis, dan pedas dari tomat segar dengan tambahan Bango Kecap Manis dan Royco Saus Tiram yang bikin rasa masakan rumah seperti di restoran.\n\nUntuk rasa terbaik, pilih udang segar berukuran sedang karena dagingnya lebih tebal dan rasanya manis. Pilih udang segar ditandai dengan kepala yang masih melekat dengan badannya. Kemudian kulitnya juga terasa keras dan menempel pada badan. Saat kulit udang ditekan terasa kenyal dan tidak lembek.\n\nYuk, segera praktikkan resep udang asam manis pedas yang rasanya seperti masakan restoran ini! Coba juga resep udang goreng tepung, udang saus padang, dan tomyam udang.',
+    image:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695126854/assets-smartchef/food/2210987993_sjftiv.jpg',
+    desc:
+        'Pecinta seafood apalagi udang wajib banget cobain resep udang asam manis pedas ini di rumah. Kombinasi asam, manis, dan pedas dari tomat segar dengan tambahan Bango Kecap Manis dan Royco Saus Tiram yang bikin rasa masakan rumah seperti di restoran.\n\nUntuk rasa terbaik, pilih udang segar berukuran sedang karena dagingnya lebih tebal dan rasanya manis. Pilih udang segar ditandai dengan kepala yang masih melekat dengan badannya. Kemudian kulitnya juga terasa keras dan menempel pada badan. Saat kulit udang ditekan terasa kenyal dan tidak lembek.\n\nYuk, segera praktikkan resep udang asam manis pedas yang rasanya seperti masakan restoran ini! Coba juga resep udang goreng tepung, udang saus padang, dan tomyam udang.',
     category: 'Seafood',
     isNew: true,
     rate: 4.9,
@@ -429,7 +461,8 @@ List<Food> listFood = [
     time: 60,
     portion: 4,
     chefName: 'Chef Juna',
-    chefPhoto: 'https://res.cloudinary.com/fajardev/image/upload/v1695179133/assets-smartchef/chef/718h2ja82k_qgzrna.jpg',
+    chefPhoto:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695179133/assets-smartchef/chef/718h2ja82k_qgzrna.jpg',
     chefAddress: 'Jakarta, Indonesia',
     ingredients: [
       '500_g udang, buang kepala, belah punggung tidak putus',
@@ -458,8 +491,10 @@ List<Food> listFood = [
   ),
   Food(
     name: 'Brown Sugar Milk Tea',
-    image: 'https://res.cloudinary.com/fajardev/image/upload/v1695133907/assets-smartchef/food/1201928372_itfxnp.jpg',
-    desc: 'Kalau sedang bertandang ke gerai milk tea yang ternama asal ibukota, biasanya kamu melihat kehadiran susu bubuk yang ditambahkan pada teh yang sudah diseduh sebelumnya. Lantas bagaimana dengan susu cair di resep ini? Apakah prosesnya juga dicampur dalam teh? Lalu bagaimana dengan cara menambahkan brown sugar-nya?\n\nProsesnya bisa semudah dengan mencairkan brown sugar bersama susu dengan merebusnya di atas api kecil. Matikan api setelah bercampur lalu seduh dengan kantung teh selama 5 menit dan jadilah brown sugar milk tea. Proses ini lebih praktis untuk level rumahan yang tidak selalu membuat minuman ini setiap hari. Selebihnya, kamu bisa menambahkan madu, es batu, dan cincau untuk menikmati minuman yang menyegarkan ini. Kapan-kapan kamu bahkan bisa menggantikan cincau dengan boba ataupun jenis topping kesukaan kamu lainnya. Selamat mencoba!',
+    image:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695133907/assets-smartchef/food/1201928372_itfxnp.jpg',
+    desc:
+        'Kalau sedang bertandang ke gerai milk tea yang ternama asal ibukota, biasanya kamu melihat kehadiran susu bubuk yang ditambahkan pada teh yang sudah diseduh sebelumnya. Lantas bagaimana dengan susu cair di resep ini? Apakah prosesnya juga dicampur dalam teh? Lalu bagaimana dengan cara menambahkan brown sugar-nya?\n\nProsesnya bisa semudah dengan mencairkan brown sugar bersama susu dengan merebusnya di atas api kecil. Matikan api setelah bercampur lalu seduh dengan kantung teh selama 5 menit dan jadilah brown sugar milk tea. Proses ini lebih praktis untuk level rumahan yang tidak selalu membuat minuman ini setiap hari. Selebihnya, kamu bisa menambahkan madu, es batu, dan cincau untuk menikmati minuman yang menyegarkan ini. Kapan-kapan kamu bahkan bisa menggantikan cincau dengan boba ataupun jenis topping kesukaan kamu lainnya. Selamat mencoba!',
     category: 'Dessert',
     isNew: false,
     rate: 4.9,
@@ -467,7 +502,8 @@ List<Food> listFood = [
     time: 30,
     portion: 4,
     chefName: 'Chef Renatta',
-    chefPhoto: 'https://res.cloudinary.com/fajardev/image/upload/v1695179132/assets-smartchef/chef/5e16811892fc7_o2pbt5.jpg',
+    chefPhoto:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695179132/assets-smartchef/chef/5e16811892fc7_o2pbt5.jpg',
     chefAddress: 'Jakarta, Indonesia',
     ingredients: [
       '800_ml susu cair rendah lemak',
@@ -485,8 +521,10 @@ List<Food> listFood = [
   ),
   Food(
     name: 'Cumi Saus Tiram',
-    image: 'https://res.cloudinary.com/fajardev/image/upload/v1695133009/assets-smartchef/food/8392836473_m5z5lk.jpg',
-    desc: 'Yang namanya seafood, bisa jadi ada di antara kita yang masih ragu mengolahnya di rumah. Padahal Indonesia diberkahi hasil laut yang melimpah dan cumi adalah salah satunya. Mencari yang segar juga tidak sulit, lho, sebetulnya. Kamu bisa melihatnya dari tekstur cumi yang masih kenyal, kulitnya yang putih segar dengan bintik-bintik merahnya yang khas, serta baunya yang tidak menyengat. Jangan ragu untuk berdiskusi dengan penjual mengenai kesegarannya. Bahkan berbelanja online saja bisa dibilang aman, lho. Para supplier sudah menandai produknya dengan tanggal sehingga kita bisa memastikan kesegarannya.\n\nSekarang mari kita mengolah resep cumi saus tiram simple ini! Hanya dengan membersihkan sejenak hingga tuntas dan memotong-motongnya, kamu sudah bisa langsung mempraktikkan resep cumi basah saus tiram ini untuk keluarga! Berapa lama waktu memasak cumi agar tidak alot? Setelah bercampur dengan bahan, cukup tumis sekitar satu menit di atas api sedang dan aduk-aduk hingga merata. Maka, tekstur cumi akan tetap terjaga kenyal dan empuk, pas banget dihidangkan untuk makan malam ataupun saat buka puasa.',
+    image:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695133009/assets-smartchef/food/8392836473_m5z5lk.jpg',
+    desc:
+        'Yang namanya seafood, bisa jadi ada di antara kita yang masih ragu mengolahnya di rumah. Padahal Indonesia diberkahi hasil laut yang melimpah dan cumi adalah salah satunya. Mencari yang segar juga tidak sulit, lho, sebetulnya. Kamu bisa melihatnya dari tekstur cumi yang masih kenyal, kulitnya yang putih segar dengan bintik-bintik merahnya yang khas, serta baunya yang tidak menyengat. Jangan ragu untuk berdiskusi dengan penjual mengenai kesegarannya. Bahkan berbelanja online saja bisa dibilang aman, lho. Para supplier sudah menandai produknya dengan tanggal sehingga kita bisa memastikan kesegarannya.\n\nSekarang mari kita mengolah resep cumi saus tiram simple ini! Hanya dengan membersihkan sejenak hingga tuntas dan memotong-motongnya, kamu sudah bisa langsung mempraktikkan resep cumi basah saus tiram ini untuk keluarga! Berapa lama waktu memasak cumi agar tidak alot? Setelah bercampur dengan bahan, cukup tumis sekitar satu menit di atas api sedang dan aduk-aduk hingga merata. Maka, tekstur cumi akan tetap terjaga kenyal dan empuk, pas banget dihidangkan untuk makan malam ataupun saat buka puasa.',
     category: 'Seafood',
     isNew: false,
     rate: 4.7,
@@ -494,7 +532,8 @@ List<Food> listFood = [
     time: 30,
     portion: 3,
     chefName: 'Chef Renatta',
-    chefPhoto: 'https://res.cloudinary.com/fajardev/image/upload/v1695179132/assets-smartchef/chef/5e16811892fc7_o2pbt5.jpg',
+    chefPhoto:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695179132/assets-smartchef/chef/5e16811892fc7_o2pbt5.jpg',
     chefAddress: 'Jakarta, Indonesia',
     ingredients: [
       '500_g cumi segar, siangi, iris melintang',
@@ -519,8 +558,10 @@ List<Food> listFood = [
   ),
   Food(
     name: 'Oseng Daging Sapi Pedas',
-    image: 'https://res.cloudinary.com/fajardev/image/upload/v1695126612/assets-smartchef/food/829918546_ueggo1.jpg',
-    desc: 'Sering bingung mengolah daging kurban? Cobain resep oseng daging sapi pedas ini, deh. Bisa diolah dari berbagai macam bagian sapi, misalnya has dalam, has luar, sengkel, sandung lamur, atau bagian iga.\n\nKalau menggunakan daging sapi yang cepat empuk misalnya has dalam dan has luar, daging bisa langsung ditumis. Tetapi jika menggunakan bagian daging yang butuh waktu untuk memasaknya, sebaiknya daging direbus terlebih dahulu hingga empuk. Untuk mengurangi aroma daging sapi yang kuat serta lemak berlebih, daging dapat direbus hingga mendidih, kemudian masak dengan air yang baru sampai empuk.\n\nYuk, buruan ke dapur dan siap-siap cobain resep oseng daging sapi ini! Ikuti juga akun Instagram Masak Apa Hari Ini untuk resep menarik lainnya.',
+    image:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695126612/assets-smartchef/food/829918546_ueggo1.jpg',
+    desc:
+        'Sering bingung mengolah daging kurban? Cobain resep oseng daging sapi pedas ini, deh. Bisa diolah dari berbagai macam bagian sapi, misalnya has dalam, has luar, sengkel, sandung lamur, atau bagian iga.\n\nKalau menggunakan daging sapi yang cepat empuk misalnya has dalam dan has luar, daging bisa langsung ditumis. Tetapi jika menggunakan bagian daging yang butuh waktu untuk memasaknya, sebaiknya daging direbus terlebih dahulu hingga empuk. Untuk mengurangi aroma daging sapi yang kuat serta lemak berlebih, daging dapat direbus hingga mendidih, kemudian masak dengan air yang baru sampai empuk.\n\nYuk, buruan ke dapur dan siap-siap cobain resep oseng daging sapi ini! Ikuti juga akun Instagram Masak Apa Hari Ini untuk resep menarik lainnya.',
     category: 'Daging',
     isNew: true,
     rate: 4.7,
@@ -528,7 +569,8 @@ List<Food> listFood = [
     time: 90,
     portion: 6,
     chefName: 'Chef Arnold',
-    chefPhoto: 'https://res.cloudinary.com/fajardev/image/upload/v1695179133/assets-smartchef/chef/dQ6BDGovwq_zwpby6.jpg',
+    chefPhoto:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695179133/assets-smartchef/chef/dQ6BDGovwq_zwpby6.jpg',
     chefAddress: 'Surabaya, Indonesia',
     ingredients: [
       '500_g daging sapi bagian sengkel atau sandung lamur',
@@ -560,8 +602,10 @@ List<Food> listFood = [
   ),
   Food(
     name: 'Teh Susu Mutiara',
-    image: 'https://res.cloudinary.com/fajardev/image/upload/v1695133699/assets-smartchef/food/9873238934_cmfceq.jpg',
-    desc: 'Jujurly, membuat teh susu itu gampang banget. Kamu hanya perlu menghangatkan susu dan tambah dengan seduhan teh. Tambahkan pemanis yang kamu suka dan jadi sudah yang namanya milk tea. Untuk resep ini, ada dua bahan yang menjadikan teh susu kamu makin sedap, yaitu kehadiran sagu mutiara yang dimasak juga bersama gula aren. Wah, rasanya bakal makin legit dan berkarakter!\n\nApakah bisa menggunakan alternatif lain selain sagu mutiara? Mengapa tidak? Kamu bisa menggunakan boba. Sebetulnya Masak Apa Hari Ini pernah berbagi rahasia membuat boba sendiri di rumah. Menarik untuk dilakukan karena bakal bikin siapapun yang menikmati racikan teh susu mutiara kamu jadi terkagum-kagum. Hanya memang, ada saja kalanya kamu ingin sesuatu yang lebih praktis. Maka, beruntunglah kita yang hidup di zaman keemasan milk tea seperti sekarang ini. Sekarang sudah tersedia boba instan, jadi tinggal kamu tambahkan saja ke dalam minumanmu.',
+    image:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695133699/assets-smartchef/food/9873238934_cmfceq.jpg',
+    desc:
+        'Jujurly, membuat teh susu itu gampang banget. Kamu hanya perlu menghangatkan susu dan tambah dengan seduhan teh. Tambahkan pemanis yang kamu suka dan jadi sudah yang namanya milk tea. Untuk resep ini, ada dua bahan yang menjadikan teh susu kamu makin sedap, yaitu kehadiran sagu mutiara yang dimasak juga bersama gula aren. Wah, rasanya bakal makin legit dan berkarakter!\n\nApakah bisa menggunakan alternatif lain selain sagu mutiara? Mengapa tidak? Kamu bisa menggunakan boba. Sebetulnya Masak Apa Hari Ini pernah berbagi rahasia membuat boba sendiri di rumah. Menarik untuk dilakukan karena bakal bikin siapapun yang menikmati racikan teh susu mutiara kamu jadi terkagum-kagum. Hanya memang, ada saja kalanya kamu ingin sesuatu yang lebih praktis. Maka, beruntunglah kita yang hidup di zaman keemasan milk tea seperti sekarang ini. Sekarang sudah tersedia boba instan, jadi tinggal kamu tambahkan saja ke dalam minumanmu.',
     category: 'Dessert',
     isNew: true,
     rate: 4.8,
@@ -569,7 +613,8 @@ List<Food> listFood = [
     time: 30,
     portion: 4,
     chefName: 'Chef Renatta',
-    chefPhoto: 'https://res.cloudinary.com/fajardev/image/upload/v1695179132/assets-smartchef/chef/5e16811892fc7_o2pbt5.jpg',
+    chefPhoto:
+        'https://res.cloudinary.com/fajardev/image/upload/v1695179132/assets-smartchef/chef/5e16811892fc7_o2pbt5.jpg',
     chefAddress: 'Jakarta, Indonesia',
     ingredients: [
       '800_ml susu cair rendah lemak',

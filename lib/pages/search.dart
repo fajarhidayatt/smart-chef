@@ -22,17 +22,19 @@ class _SearchState extends State<Search> {
     super.initState();
     text = widget.search;
     listResult = listFood
-      .where((food) => food.name.toLowerCase().contains(text.toLowerCase()))
-      .toList();
+        .where((food) => food.name.toLowerCase().contains(text.toLowerCase()))
+        .toList();
   }
 
-  void handleSubmitted(String value){
-    if(value.isNotEmpty){
+  void handleSubmitted(String value) {
+    if (value.isNotEmpty) {
       setState(() {
         text = value;
         listResult = listFood
-          .where((food) => food.name.toLowerCase().contains(text.toLowerCase()))
-          .toList();
+            .where(
+              (food) => food.name.toLowerCase().contains(text.toLowerCase()),
+            )
+            .toList();
       });
     }
   }
@@ -47,10 +49,11 @@ class _SearchState extends State<Search> {
         centerTitle: true,
         backgroundColor: Colors.transparent,
         leading: IconButton(
-          onPressed: () => Navigator.pop(context), 
+          onPressed: () => Navigator.pop(context),
           icon: const Icon(Icons.arrow_back_rounded, color: Colors.black),
         ),
-        title: Text('Cari Resep',
+        title: Text(
+          'Cari Resep',
           style: GoogleFonts.poppins(
             fontSize: 18.0,
             fontWeight: FontWeight.w600,
@@ -66,12 +69,13 @@ class _SearchState extends State<Search> {
             children: <Widget>[
               TextInput(
                 value: text,
-                onSubmitted: handleSubmitted, 
+                onSubmitted: handleSubmitted,
                 clearWhenSubmitted: false,
               ),
               Padding(
                 padding: const EdgeInsets.all(20.0),
-                child: Text('Hasil pencarian "$text"',
+                child: Text(
+                  'Hasil pencarian "$text"',
                   style: GoogleFonts.poppins(
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
@@ -82,19 +86,23 @@ class _SearchState extends State<Search> {
                 ? Expanded(
                     child: GridView.count(
                       padding: const EdgeInsets.fromLTRB(20.0, 0, 20.0, 20.0),
-                      crossAxisCount: screenWidth < 456 
-                        ? 2 : screenWidth < 576
-                        ? 3 : 4,
+                      crossAxisCount: screenWidth < 456
+                          ? 2
+                          : screenWidth < 576
+                          ? 3
+                          : 4,
                       mainAxisSpacing: 15.0,
                       crossAxisSpacing: 15.0,
                       children: <FoodItem>[
-                        for(Food food in listResult) FoodItem(food: food, type: 'tertiary'),
+                        for (Food food in listResult)
+                          FoodItem(food: food, type: 'tertiary'),
                       ],
                     ),
                   )
                 : Expanded(
                     child: Center(
-                      child: Text('Resep tidak ditemukan \n😔',
+                      child: Text(
+                        'Resep tidak ditemukan \n😔',
                         textAlign: TextAlign.center,
                         style: GoogleFonts.poppins(
                           fontSize: 20,
@@ -110,4 +118,3 @@ class _SearchState extends State<Search> {
     );
   }
 }
-

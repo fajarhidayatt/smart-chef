@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smart_chef/screens/home.dart';
+import 'package:smart_chef/pages/home.dart';
 
 void main() {
   runApp(const MyApp());

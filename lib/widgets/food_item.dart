@@ -1,27 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:smart_chef/helpers/helpers.dart';
+import 'package:smart_chef/utils/helpers.dart';
 import 'package:smart_chef/models/food.dart';
-import 'package:smart_chef/screens/detail.dart';
+import 'package:smart_chef/pages/detail.dart';
 
 class FoodItem extends StatelessWidget {
   final Food food;
   final String type;
 
-  const FoodItem({
-    super.key, 
-    required this.food, 
-    required this.type,
-  });
+  const FoodItem({super.key, required this.food, required this.type});
 
   @override
   Widget build(BuildContext context) {
-    return type == 'primary' 
-      ? Primary(food: food) 
-      : type == 'secondary'
-      ? Secondary(food: food)
-      : Tertiary(food: food);
+    return type == 'primary'
+        ? Primary(food: food)
+        : type == 'secondary'
+        ? Secondary(food: food)
+        : Tertiary(food: food);
   }
 }
 
@@ -33,10 +29,12 @@ class Primary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){
+      onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => Detail(food: food, id: 'pr',))
+          MaterialPageRoute(
+            builder: (context) => Detail(food: food, id: 'pr'),
+          ),
         );
       },
       child: Container(
@@ -52,14 +50,15 @@ class Primary extends StatelessWidget {
               padding: const EdgeInsets.all(10.0),
               decoration: BoxDecoration(
                 color: Colors.grey[200],
-                borderRadius: BorderRadius.circular(12.0)
+                borderRadius: BorderRadius.circular(12.0),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   const SizedBox(height: 60.0),
                   Center(
-                    child: Text(food.name,
+                    child: Text(
+                      food.name,
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                       textAlign: TextAlign.center,
@@ -70,13 +69,15 @@ class Primary extends StatelessWidget {
                     ),
                   ),
                   const Spacer(),
-                  Text('Waktu',
+                  Text(
+                    'Waktu',
                     style: GoogleFonts.poppins(
                       fontSize: 12.0,
                       color: const Color(0xFFA9A9A9),
                     ),
                   ),
-                  Text('${food.time} Mnt',
+                  Text(
+                    '${food.time} Mnt',
                     style: GoogleFonts.poppins(
                       fontSize: 12.0,
                       fontWeight: FontWeight.w600,
@@ -99,20 +100,22 @@ class Primary extends StatelessWidget {
               right: 0,
               top: 25.0,
               child: Container(
-                padding: const EdgeInsets.symmetric(vertical: 3.0, horizontal: 7.0),
+                padding: const EdgeInsets.symmetric(
+                  vertical: 3.0,
+                  horizontal: 7.0,
+                ),
                 decoration: BoxDecoration(
                   color: const Color(0xFFFFE1B3),
-                  borderRadius: BorderRadius.circular(20.0)
+                  borderRadius: BorderRadius.circular(20.0),
                 ),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
                     SvgPicture.asset('assets/vectors/ic_star.svg'),
                     const SizedBox(width: 3.0),
-                    Text(food.rate.toString(),
-                      style: GoogleFonts.poppins(
-                        fontSize: 11,
-                      ),
+                    Text(
+                      food.rate.toString(),
+                      style: GoogleFonts.poppins(fontSize: 11),
                     ),
                   ],
                 ),
@@ -129,14 +132,16 @@ class Secondary extends StatelessWidget {
   final Food food;
 
   const Secondary({super.key, required this.food});
-  
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){
+      onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => Detail(food: food, id: 'sc'))
+          MaterialPageRoute(
+            builder: (context) => Detail(food: food, id: 'sc'),
+          ),
         );
       },
       child: Container(
@@ -157,7 +162,7 @@ class Secondary extends StatelessWidget {
                     color: Colors.black12,
                     spreadRadius: 1,
                     blurRadius: 1,
-                    offset: Offset(1, 1)
+                    offset: Offset(1, 1),
                   ),
                 ],
               ),
@@ -165,7 +170,8 @@ class Secondary extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  Text(truncateText(food.name, 13),
+                  Text(
+                    truncateText(food.name, 13),
                     style: GoogleFonts.poppins(
                       fontSize: 14.0,
                       fontWeight: FontWeight.w600,
@@ -173,7 +179,8 @@ class Secondary extends StatelessWidget {
                   ),
                   Row(
                     children: <Widget>[
-                      for(int i = 1; i <= 5; i++) SvgPicture.asset('assets/vectors/ic_star.svg'),
+                      for (int i = 1; i <= 5; i++)
+                        SvgPicture.asset('assets/vectors/ic_star.svg'),
                     ],
                   ),
                   Row(
@@ -184,7 +191,8 @@ class Secondary extends StatelessWidget {
                         radius: 20.0,
                       ),
                       const SizedBox(width: 8.0),
-                      Text('by ${food.chefName}',
+                      Text(
+                        'by ${food.chefName}',
                         style: GoogleFonts.poppins(
                           fontSize: 12.0,
                           color: Colors.grey,
@@ -193,7 +201,8 @@ class Secondary extends StatelessWidget {
                       const Spacer(),
                       SvgPicture.asset('assets/vectors/ic_timer.svg'),
                       const SizedBox(width: 5.0),
-                      Text('${food.time} mnt',
+                      Text(
+                        '${food.time} mnt',
                         style: GoogleFonts.poppins(
                           fontSize: 12,
                           color: Colors.grey,
@@ -230,10 +239,12 @@ class Tertiary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){
+      onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => Detail(food: food, id: 'tr'))
+          MaterialPageRoute(
+            builder: (context) => Detail(food: food, id: 'tr'),
+          ),
         );
       },
       child: Hero(
@@ -261,7 +272,10 @@ class Tertiary extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: <Widget>[
                 Container(
-                  padding: const EdgeInsets.symmetric(vertical: 3.0, horizontal: 10.0),
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 3.0,
+                    horizontal: 10.0,
+                  ),
                   decoration: BoxDecoration(
                     color: const Color(0xFFFFE1B3),
                     borderRadius: BorderRadius.circular(20.0),
@@ -271,10 +285,9 @@ class Tertiary extends StatelessWidget {
                     children: <Widget>[
                       SvgPicture.asset('assets/vectors/ic_star.svg'),
                       const SizedBox(width: 3.0),
-                      Text(food.rate.toString(),
-                        style: GoogleFonts.poppins(
-                          fontSize: 11,
-                        ),
+                      Text(
+                        food.rate.toString(),
+                        style: GoogleFonts.poppins(fontSize: 11),
                       ),
                     ],
                   ),
@@ -284,7 +297,8 @@ class Tertiary extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Text(food.name,
+                      Text(
+                        food.name,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
                         style: GoogleFonts.poppins(
@@ -294,7 +308,8 @@ class Tertiary extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 5.0),
-                      Text('By ${food.chefName}',
+                      Text(
+                        'By ${food.chefName}',
                         style: GoogleFonts.poppins(
                           fontSize: 10.0,
                           color: Colors.grey,
